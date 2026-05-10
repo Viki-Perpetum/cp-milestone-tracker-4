@@ -53,7 +53,7 @@ function ProtectedRoutes() {
   return (
     <Routes>
       <Route element={<MainLayout />}>
-        <Route path="/cp-milestone-tracker-4" element={<CpMilestoneTracker />} />
+        <Route index element={<CpMilestoneTracker />} />
         {/* CLAUDE_INSERT_ROUTES */}
       </Route>
       <Route path="*" element={<NotFound />} />
